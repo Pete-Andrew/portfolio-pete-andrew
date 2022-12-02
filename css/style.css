@@ -66,13 +66,14 @@ p {
     }
   
   h3 {
+    /* Work and about me headings */
     display: flex;
     font-size: 30pt;
     margin-left: 3%;
-    width: 12%;
     height: 200px;
     text-align: left;
-    border-right-style: solid;
+    border-right: solid 5px; 
+    margin-right: 0%;
     } 
   
   h4 { 
@@ -107,12 +108,11 @@ p {
   
   #AboutMePara {
     display: flex;
-    width: 70%;
-    margin-left: 20%;
+    width: 85%;
+    margin-left: 8%;
     text-align: justify;
     margin-top: 3%;
     height: 90%;
-    position: absolute;
     }
 
   .page-section-contact {
@@ -154,13 +154,13 @@ p {
 #A {
   grid-area: A;
   background-image: url("../images/02-portfolio-1.jpg");
-  
-}
+  }
 
 #B {
   grid-area: B;
   background-image: url(../images/02-portfolio-2.jpg);
 }
+
 #C {
   grid-area: C;
   background-image: url(../images/02-portfolio-3.jpg)
