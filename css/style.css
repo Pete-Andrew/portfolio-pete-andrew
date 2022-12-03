@@ -19,14 +19,11 @@ body {
   background-color: rgb(199, 207, 207);
   }
 
-h4,
-h5,
-h6 {}
- 
 
-p {
+/* p {
   margin: 0;
-}
+  background-color: brown;
+} */
 
 .hero-banner {
   display: flex;
@@ -68,7 +65,7 @@ p {
     margin-right: 10%;
     }
   
-  h3, h4 {
+  h3 {
     /* Work and about me headings */
     display: flex;
     font-size: 30pt;
@@ -76,20 +73,19 @@ p {
     height: 2%;
     text-align: left;
     padding-right: 2%;
+    background-color: chartreuse;
     /* border-right: solid 5px; 
     margin-right: 0%; */
     } 
   
-  /* h4 { 
+    h4 {
     display: flex;
-    font-size: 30p;
+    font-size: 30pt;
     margin-left: 3%;
-    margin-right: 0%;
-    width: 12%;
-    height: 200px;
+    margin-top: 3%;
     text-align: left;
-    } */
-
+    background-color: crimson;
+  }
 
   #HeaderImage {
     display: flex;
@@ -108,29 +104,30 @@ p {
     display: flex;
     flex-direction: row;
     margin-top: 2%;
-    } 
+    background-color: blue;  
+  } 
   
-  #AboutMePara {
+#AboutMePara {
         
-    display: flex;
-    width: 90%;
-    
-    
-    margin-left: 2.4%;
-    text-align: justify;
-    margin-top: 3%;
-    /* height: 90%; */
-    /* creates the left border */
-    border-left: solid 5px; 
-    /* seperates the border from the main grid */
-    padding-left: 6%;  
+  display: flex;
+  width: 92%;  
+  margin-left: 2.4%;
+  text-align: justify;
+  margin-top: 3%;
+  /* height: 90%; */
+  /* creates the left border */
+  border-left: solid 5px; 
+  /* seperates the border from the main grid */
+  padding-left: 6%;  
+  padding-right: 2%;
+  background-color: burlywood;
       
   }
 
   .page-section-contact {
     display: flex;
     flex-direction: row;
-    margin: 0px 5%;
+    /* margin: 0px 5%; */
     }
 
 #contact-footer {
@@ -139,16 +136,20 @@ p {
     flex-direction: row;
     width: 100%;
     color: rgb(114, 192, 211);
+    background-color: burlywood;
     text-decoration: underline;
     text-decoration-thickness: 3px; 
-    margin: 10px;
+    font-size: 15pt;
+    /* margin: 10px; */
+    padding-left: 40%;
     align-items: center;
-    justify-content: flex-end;
-
+    justify-content: center;
+    margin-top: 2%;
+    
     /* creates the left border */
     border-left: solid 5px black; 
     /* seperates the border from the main grid */
-    padding-left: 4%;  
+    padding-left: 0%;  
       
   }
     
@@ -176,45 +177,64 @@ p {
     /* seperates the border from the main grid */
     padding-left: 4%;  
     
-    
+    background-color: burlywood;
   }
 
 #A {
   grid-area: A;
   background-image: url("../images/02-portfolio-1.jpg");
-  }
+  margin: 1%;  
+  border: solid 5px black;
+}
 
 #B {
   grid-area: B;
   background-image: url(../images/02-portfolio-2.jpg);
+  margin: 2%;  
+  border: solid 5px black;
 }
 
 #C {
   grid-area: C;
-  background-image: url(../images/02-portfolio-3.jpg)
+  background-image: url(../images/02-portfolio-3.jpg);
+  margin: 2%; 
+  border: solid 5px black; 
 }
 
 #D {
   grid-area: D;
-  background-image: url(../images/02-portfolio-4.jpg)
+  background-image: url(../images/02-portfolio-4.jpg);
+  margin: 2%;  
+  border: solid 5px black;
 }
 
 #E {
   grid-area: E;
-  background-image: url(../images/02-run-buddy.jpg)
-   
+  background-image: url(../images/02-run-buddy.jpg);
+  margin: 2%;   
+  border: solid 5px black;  
 }
 
 .GridAreaSpacing {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  margin: 20px;
+  /* margin: 10px; */
+  
   cursor: pointer;
   display: grid;
   align-content: end;
-  
-    /* 
+}
+
+.GridAreaSpacing p {
+  background-color: rgb(0, 255, 136);
+  width: 20%;
+  margin-bottom: 10%;
+
+}
+
+
+/* 
     @media --- will be useful to change the page as it is resized. */
 /* 
   NOTES:  
