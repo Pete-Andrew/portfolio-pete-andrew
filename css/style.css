@@ -68,18 +68,19 @@ p {
     margin-right: 10%;
     }
   
-  h3 {
+  h3, h4 {
     /* Work and about me headings */
     display: flex;
     font-size: 30pt;
     margin-left: 3%;
-    height: 200px;
+    height: 2%;
     text-align: left;
-    border-right: solid 5px; 
-    margin-right: 0%;
+    padding-right: 2%;
+    /* border-right: solid 5px; 
+    margin-right: 0%; */
     } 
   
-  h4 { 
+  /* h4 { 
     display: flex;
     font-size: 30p;
     margin-left: 3%;
@@ -87,10 +88,7 @@ p {
     width: 12%;
     height: 200px;
     text-align: left;
-    border-right: 5px solid;
-
- 
-    }
+    } */
 
 
   #HeaderImage {
@@ -113,13 +111,21 @@ p {
     } 
   
   #AboutMePara {
+        
     display: flex;
-    width: 85%;
-    margin-left: 8%;
+    width: 90%;
+    
+    
+    margin-left: 2.4%;
     text-align: justify;
     margin-top: 3%;
-    height: 90%;
-    }
+    /* height: 90%; */
+    /* creates the left border */
+    border-left: solid 5px; 
+    /* seperates the border from the main grid */
+    padding-left: 6%;  
+      
+  }
 
   .page-section-contact {
     display: flex;
@@ -138,12 +144,20 @@ p {
     margin: 10px;
     align-items: center;
     justify-content: flex-end;
-    }
+
+    /* creates the left border */
+    border-left: solid 5px black; 
+    /* seperates the border from the main grid */
+    padding-left: 4%;  
+      
+  }
+    
 
 #WorkGrid {
     display: flex;
-    margin: 0px 5%;
-    margin-left: 6.5%;
+    /* margin: 0px 5%; */
+    margin-left: 3%;
+    
     display: grid;
     grid-template-rows: 300px 300px 300px 300px;
     grid-template-columns: 1fr 1fr;
@@ -154,7 +168,15 @@ p {
     "D E"
      ;
 
-    width: 100%;
+    width: 81%;
+    margin-right: -20%;
+    
+    /* creates the left border */
+    border-left: solid 5px; 
+    /* seperates the border from the main grid */
+    padding-left: 4%;  
+    
+    
   }
 
 #A {
@@ -192,9 +214,10 @@ p {
   display: grid;
   align-content: end;
   
-}
-
-
-
     /* 
     @media --- will be useful to change the page as it is resized. */
+/* 
+  NOTES:  
+  
+  
+  */
