@@ -20,12 +20,6 @@ body {
   background-color: rgb(199, 207, 207);
   }
 
-
-/* p {
-  margin: 0;
-  background-color: brown;
-} */
-
 .hero-banner {
   display: flex;
   background-color: rgb(114, 192, 211);
@@ -72,10 +66,7 @@ body {
     display: flex;
     position: absolute; left: 75%; bottom: 57%;
     background-color: aqua;
-    /* margin-left: 30%;
-    margin-bottom: 90%; */
-    
-    
+          
   }
   
   h3 {
@@ -86,19 +77,19 @@ body {
     height: 2%;
     text-align: left;
     padding-right: 2%;
-    background-color: chartreuse;
-    /* border-right: solid 5px; 
-    margin-right: 0%; */
+    /* background-color: chartreuse; */
+
     } 
   
     h4 {
-    /* contact me heading */
     display: flex;
     font-size: 30pt;
     margin-left: 3%;
-    margin-top: 3%;
+    height: 2%;
     text-align: left;
-    background-color: crimson;
+    padding-right: 2%;
+    /* background-color: chartreuse; */
+   
   }
 
   #HeaderImage {
@@ -109,9 +100,7 @@ body {
     height: 300px;
     background-size: cover;
     align-items: center; 
-    /* justify-content: right; */
     background-repeat: no-repeat;
-    /* background-position: 50%;     */
     z-index: -1;
     }
   
@@ -136,7 +125,7 @@ body {
     display: flex;
     flex-direction: row;
     margin-top: 2%;
-    background-color: blue;  
+    /* background-color: blue;   */
   } 
   
 #AboutMePara {
@@ -145,39 +134,27 @@ body {
   width: 92%;  
   margin-left: 2.4%;
   text-align: justify;
-  margin-top: 3%;
-  /* height: 90%; */
-  /* creates the left border */
+  margin-top: 1%;
+  margin-bottom: 0%;
   border-left: solid 5px; 
+  
   /* seperates the border from the main grid */
   padding-left: 6%;  
   padding-right: 2%;
-  background-color: burlywood;
+  /* background-color: burlywood; */
       
   }
 
-  .page-section-contact {
-    display: flex;
-    flex-direction: row;
-    /* margin: 0px 5%; */
-    }
-
 #contact-footer {
     
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+    
+    width: 80.5%;
     color: rgb(114, 192, 211);
-    background-color: burlywood;
+    background-color: rgb(43, 112, 112);
     text-decoration: underline;
     text-decoration-thickness: 3px; 
     font-size: 15pt;
-    /* margin: 10px; */
-    padding-left: 40%;
-    align-items: center;
-    justify-content: center;
-    margin-top: 2%;
-    
+            
     /* creates the left border */
     border-left: solid 5px black; 
     /* seperates the border from the main grid */
@@ -210,7 +187,7 @@ body {
     /* seperates the border from the main grid */
     padding-left: 4%;  
     
-    background-color: burlywood;
+    /* background-color: burlywood; */
   }
 
 #A {
@@ -260,6 +237,7 @@ body {
 }
 
 .GridAreaSpacing p {
+  /* gives menu bars that overlay the grid images */
   background-color: rgb(0, 255, 136);
   width: 20%;
   margin-bottom: 10%;
@@ -267,12 +245,12 @@ body {
 }
 
 #footer {
-  /* final footer, mostly a black bar */
+  /* final footer, mostly just a bar */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: yellow;
+  background-color: rgb(111, 189, 219);
   width: 100%;
   height: 80px;
   margin-top: 2%;
@@ -282,6 +260,7 @@ body {
     @media --- will be useful to change the page as it is resized. */
 /* 
   NOTES:  
-  
+  jumping anchor links 
+  <a href="
   
   */
