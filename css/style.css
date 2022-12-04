@@ -2,13 +2,18 @@
 header {
   display: flex;
   justify-content: right;
-  background-color: rgb(46, 85, 82);
+  background-color: rgb(43, 109, 72);
   width: 100%;
   height: 80px;
 }
 
 * {
   box-sizing: border-box;
+}
+
+a {  
+  /* targets all anchor tags */
+  color: aqua;
 }
 
 body {
@@ -94,8 +99,11 @@ body {
 
   #HeaderImage {
     display: flex;
+    
     /* background-image: url("../images/Womans-eyes-Pete.jpg"); */
-    background-image: url("../images/02-hero-bg.jpg");
+    /* background-image: url("../images/02-hero-bg.jpg"); */
+    background-image: url("../images/Ferns\ wistamans\ wood\ LowRes.jpg");
+
     width: 100%;
     height: 300px;
     background-size: cover;
@@ -147,13 +155,16 @@ body {
 
 #contact-footer {
     
-    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     width: 80.5%;
     color: rgb(114, 192, 211);
     background-color: rgb(43, 112, 112);
     text-decoration: underline;
     text-decoration-thickness: 3px; 
     font-size: 15pt;
+    
             
     /* creates the left border */
     border-left: solid 5px black; 
@@ -260,7 +271,7 @@ body {
     @media --- will be useful to change the page as it is resized. */
 /* 
   NOTES:  
-  jumping anchor links 
-  <a href="
+ 
+  How to move an image around inside a CSS box????
   
   */
