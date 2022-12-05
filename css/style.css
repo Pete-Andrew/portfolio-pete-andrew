@@ -242,14 +242,14 @@ body {
 
 #D {
   grid-area: D;
-  background-image: url(../images/02-portfolio-4.jpg);
+  background-image: url(../images/peter-andrew-janglebonespete-zdzisaw-beksinski-garden-of-earthly-delights-w-2394bdf6-5efa-4ecb-a0a1-78272e623571.jpg);
   margin: 2%;  
   border: solid 5px black;
 }
 
 #E {
   grid-area: E;
-  background-image: url(../images/02-run-buddy.jpg);
+  background-image: url(../images/peter-andrew-blender-still-life-render-4.jpg);
   margin: 2%;   
   border: solid 5px black;  
 }
@@ -294,15 +294,19 @@ body {
 
 @media only screen and (max-width: 768px) {
   #WorkGrid {
-    grid-template-rows: 200px 200px 200px 200px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    "A"
+    grid-template-rows: 200px 200px 200px 200px 200px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
     "A"
     "B"
     "C"
     "D"
     "E"
     ;
+  
+  border-left: none;
+  width: 90%;
+  
   } 
 }
 
@@ -318,6 +322,17 @@ body {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  #AboutMePara {
+    border-left: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #AboutMePara {
+    border-left: none;
+  }
+}
 
 /* 
     @media --- will be useful to change the page as it is resized. */
