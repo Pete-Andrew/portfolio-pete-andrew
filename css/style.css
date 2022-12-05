@@ -11,7 +11,7 @@ header {
   box-sizing: border-box;
 }
 
-a {  
+#navigation a {  
   /* targets all anchor tags */
   color: aqua;
 }
@@ -22,7 +22,7 @@ body {
   /* width: 100%; */
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  background-color: rgb(199, 207, 207);
+  background-color: rgb(255, 255, 255);
   }
 
 .hero-banner {
@@ -64,6 +64,7 @@ body {
     width: 100%;
     margin-left: 3%;
     margin-right: 10%;
+    padding-right: 2%;
     }
   
   h2 {
@@ -104,8 +105,11 @@ body {
     /* background-image: url("../images/02-hero-bg.jpg"); */
     background-image: url("../images/Ferns\ wistamans\ wood\ LowRes.jpg");
 
+    background-position: center; 
+   
     width: 100%;
     height: 300px;
+    
     background-size: cover;
     align-items: center; 
     background-repeat: no-repeat;
@@ -114,7 +118,7 @@ body {
   
     #picture-of-me {
       display: flex;
-      background-image: url("../images/picture-of-me.jpg");
+      background-image: url("../images/photo-of-me-3.jpg");
       width: 200px;
       height: 200px;
       /* position: left; */
@@ -182,6 +186,7 @@ body {
     
   display: grid;
   grid-template-rows: 300px 300px 300px 300px;
+  /* grid-template-rows: 75% 75% 75% 75%;  If you use percentage rahter that px it mashes the bottom of the page :(   */
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
     "A A"
@@ -191,35 +196,48 @@ body {
      ;
 
     width: 81%;
+    
     margin-right: -20%;
+   
     
     /* creates the left border */
     border-left: solid 5px; 
     /* seperates the border from the main grid */
     padding-left: 4%;  
     
-    /* background-color: burlywood; */
+    background-color: burlywood;
   }
+
+
+#WorkGrid a {
+  color: black;
+}
 
 #A {
   grid-area: A;
-  background-image: url("../images/02-portfolio-1.jpg");
+  background-image: url("../images/Green\ blob\ screen\ shot.jpg");
+  background-size: 100%;
+  background-position: 50% 35%;
+  background-color: rgb(51, 112, 82);
   margin: 1%;  
   border: solid 5px black;
 }
 
 #B {
   grid-area: B;
-  background-image: url(../images/02-portfolio-2.jpg);
+  background-image: url(../images/peter-andrew-desert-render-final-edit-1.jpg);
+  
+
   margin: 2%;  
   border: solid 5px black;
 }
 
 #C {
   grid-area: C;
-  background-image: url(../images/02-portfolio-3.jpg);
+  background-image: url(../images/peter-andrew-sunken-king-ps-edit-2.jpg);
   margin: 2%; 
   border: solid 5px black; 
+  background-position: 50% 40%;
 }
 
 #D {
@@ -245,6 +263,7 @@ body {
   cursor: pointer;
   display: grid;
   align-content: end;
+  
 }
 
 .GridAreaSpacing p {
@@ -264,8 +283,41 @@ body {
   background-color: rgb(111, 189, 219);
   width: 100%;
   height: 80px;
-  margin-top: 2%;
+  
+  
+  
+  background-image: url(../images/Ferns\ wistamans\ wood\ LowRes.jpg);
+  
+  background-size: cover;
+  background-position: 10%;
 }
+
+@media only screen and (max-width: 768px) {
+  #WorkGrid {
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    "A"
+    "A"
+    "B"
+    "C"
+    "D"
+    "E"
+    ;
+  } 
+}
+
+@media only screen and (max-width: 768px) {
+  h3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h4 {
+    display: none;
+  }
+}
+
 
 /* 
     @media --- will be useful to change the page as it is resized. */
