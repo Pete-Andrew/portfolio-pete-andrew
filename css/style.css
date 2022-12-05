@@ -13,7 +13,7 @@ header {
 
 #navigation a {  
   /* targets all anchor tags */
-  color: aqua;
+  color: rgb(255, 255, 255);
 }
 
 body {
@@ -27,7 +27,7 @@ body {
 
 .hero-banner {
   display: flex;
-  background-color: rgb(114, 192, 211);
+  background-color: rgb(255, 255, 255);
   margin-left: 20%;
   margin-top: 10%;
   }
@@ -37,7 +37,7 @@ body {
   flex-direction: row;
   margin: 0px 5%;
   align-items: center;
-  /* justify-content: flex-end; */
+  
   }
 
 #navigation {
@@ -48,7 +48,7 @@ body {
 #navigation p {
     cursor: pointer;
     text-decoration: none;
-    color: rgb(114, 192, 211);
+    color: rgb(255, 255, 255);
     text-decoration: underline;
     text-decoration-thickness: 3px; 
     margin: 10px;
@@ -59,20 +59,25 @@ body {
     /* Portfolio, - Pete Andrew heading (top left) */
     display: flex;
     position: absolute; left: -80%;
-    background-color: rgb(114, 192, 211);
+    background-color: rgb(255, 255, 255);
     justify-content: flex-end; right: 80%; 
     width: 100%;
     margin-left: 3%;
     margin-right: 10%;
     padding-right: 2%;
+    border: rgb(34, 179, 58) solid 5px;
+    outline: rgb(12, 153, 35) solid 5px;
     }
   
   h2 {
     /* cool sub-title here */
     display: flex;
     position: absolute; left: 75%; bottom: 57%;
-    background-color: aqua;
-          
+    background-color: rgb(255, 255, 255);
+    padding: 15px 15px;
+    border: rgb(34, 179, 58) solid 5px;
+    outline: rgb(10, 116, 28) solid 5px;
+              
   }
   
   h3 {
@@ -86,8 +91,9 @@ body {
     /* background-color: chartreuse; */
 
     } 
-  
+     
     h4 {
+    /* contact me heading */
     display: flex;
     font-size: 30pt;
     margin-left: 3%;
@@ -100,9 +106,7 @@ body {
 
   #HeaderImage {
     display: flex;
-    
-    /* background-image: url("../images/Womans-eyes-Pete.jpg"); */
-    /* background-image: url("../images/02-hero-bg.jpg"); */
+  
     background-image: url("../images/Ferns\ wistamans\ wood\ LowRes.jpg");
 
     background-position: center; 
@@ -121,16 +125,15 @@ body {
       background-image: url("../images/photo-of-me-3.jpg");
       width: 200px;
       height: 200px;
-      /* position: left; */
+      
       margin-left: 8%;
       z-index: 3;
       background-size: cover;
       background-repeat: no-repeat;
       border-radius: 50%;
-      border: bisque solid 5px;
       
-      /* How to move an image within a border??? */
-
+      border: rgb(34, 179, 58) solid 5px;
+      outline: rgb(10, 116, 28) solid 5px;
     }
 
   .page-section {
@@ -157,36 +160,15 @@ body {
       
   }
 
-#contact-footer {
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 80.5%;
-    color: rgb(114, 192, 211);
-    background-color: rgb(43, 112, 112);
-    text-decoration: underline;
-    text-decoration-thickness: 3px; 
-    font-size: 15pt;
-    
-            
-    /* creates the left border */
-    border-left: solid 5px black; 
-    /* seperates the border from the main grid */
-    padding-left: 0%;  
-      
-  }
-    
-
 #WorkGrid {
   /* Displays work in a grid  */
   display: flex;
-  /* margin: 0px 5%; */
+ 
   margin-left: 3%;
     
   display: grid;
   grid-template-rows: 300px 300px 300px 300px;
-  /* grid-template-rows: 75% 75% 75% 75%;  If you use percentage rahter that px it mashes the bottom of the page :(   */
+  /* grid-template-rows: 75% 75% 75% 75%;  If you use percentage rather that px it mashes the bottom of the page :(   */
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
     "A A"
@@ -196,16 +178,14 @@ body {
      ;
 
     width: 81%;
-    
     margin-right: -20%;
-   
-    
+      
     /* creates the left border */
     border-left: solid 5px; 
     /* seperates the border from the main grid */
     padding-left: 4%;  
     
-    background-color: burlywood;
+    /* background-color: burlywood; */
   }
 
 
@@ -221,15 +201,15 @@ body {
   background-color: rgb(51, 112, 82);
   margin: 1%;  
   border: solid 5px black;
+  font-weight: bold;
 }
 
 #B {
   grid-area: B;
   background-image: url(../images/peter-andrew-desert-render-final-edit-1.jpg);
-  
-
   margin: 2%;  
   border: solid 5px black;
+  font-weight: bold;
 }
 
 #C {
@@ -238,6 +218,7 @@ body {
   margin: 2%; 
   border: solid 5px black; 
   background-position: 50% 40%;
+  font-weight: bold;
 }
 
 #D {
@@ -245,6 +226,8 @@ body {
   background-image: url(../images/peter-andrew-janglebonespete-zdzisaw-beksinski-garden-of-earthly-delights-w-2394bdf6-5efa-4ecb-a0a1-78272e623571.jpg);
   margin: 2%;  
   border: solid 5px black;
+  background-position: 50% 10%;
+  font-weight: bold;
 }
 
 #E {
@@ -252,6 +235,7 @@ body {
   background-image: url(../images/peter-andrew-blender-still-life-render-4.jpg);
   margin: 2%;   
   border: solid 5px black;  
+  font-weight: bold;
 }
 
 .GridAreaSpacing {
@@ -268,11 +252,34 @@ body {
 
 .GridAreaSpacing p {
   /* gives menu bars that overlay the grid images */
-  background-color: rgb(0, 255, 136);
+  background-color: rgb(255, 255, 255, 0.7);
   width: 20%;
   margin-bottom: 10%;
 
 }
+
+#contact-footer {
+    
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  align-content: center;
+  width: 80.5%;
+  color: rgb(0, 0, 0);
+  /* background-color: rgb(43, 112, 112); */
+  text-decoration: underline;
+  text-decoration-thickness: 3px; 
+  font-size: 15pt;
+  
+          
+  /* creates the left border */
+  border-left: solid 5px black; 
+  /* seperates the border from the main grid */
+  padding-left: 0%;  
+    
+}
+  
+
 
 #footer {
   /* final footer, mostly just a bar */
@@ -283,13 +290,14 @@ body {
   background-color: rgb(111, 189, 219);
   width: 100%;
   height: 80px;
-  
-  
-  
+  margin-top: 30px;  
   background-image: url(../images/Ferns\ wistamans\ wood\ LowRes.jpg);
   
   background-size: cover;
   background-position: 10%;
+
+  font-size: 15pt;
+  font-weight: bolder;
 }
 
 @media only screen and (max-width: 768px) {
@@ -330,6 +338,13 @@ body {
 
 @media only screen and (max-width: 768px) {
   #AboutMePara {
+    border-left: none;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  #contact-footer {
     border-left: none;
   }
 }
