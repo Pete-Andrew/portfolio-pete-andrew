@@ -4,6 +4,8 @@
 A brief portfolio of my existing coding work and some of my digital art as placheolders. 
 This project was build to help develop a better understanding of HTML and CSS and as a showpiece for that learning. 
 
+See the [Live Page](https://pete-andrew.github.io/portfolio-pete-andrew/)
+
 ## Table of Contents (Optional)
 
 N/A
